@@ -1,0 +1,9 @@
+<div class="login-page">
+  <div class="form">
+    <h1><%=@users_id.first['name']%></h1>
+    <% @users_id.each do |item|%>
+    <h1><%= item['title']%></h1>
+    <h1><%= item['post']%></h1>
+    <% end%>
+  </div>
+</div>

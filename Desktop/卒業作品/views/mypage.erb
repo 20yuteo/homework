@@ -1,0 +1,10 @@
+<div class="login-page">
+  <div class="form">
+    <%@post.each do |item|%>
+    <% title = item['title']%>
+    <h1>タイトル<br><%=title%></h1>
+    <% post = item['post']%>
+    <h1>内容<br><%= post%></h1>
+    <% end%>
+  </div>
+</div>

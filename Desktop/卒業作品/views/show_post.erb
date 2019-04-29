@@ -1,0 +1,23 @@
+<div class="login-page">
+  <div class="form">
+  <% @show_post.each do |post| %>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <a href="/delete/<%= post['id'] %>">削除</a>
+  <p class="border"></p>
+  <h1><%= post['title']%></h1>
+  <p class="border"></p>
+  <h1><%= post['post']%></h1>
+  <p class="border"></p>
+  <% end %>
+  <p class="border"></p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </div>
+</div>

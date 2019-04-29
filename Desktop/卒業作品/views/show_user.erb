@@ -1,0 +1,8 @@
+<div class="login-page">
+  <div class="form">
+   <h1><% @show_user.each do |user| %></h1>
+   <h1><%= user['name']%></h1>
+   <a href="/users_page/<%=user['id']%>"><%=user['name']%>さんの記事を観たいか？？</a>
+   <h1><% end %></h1>
+  </div>
+</div>
